@@ -7,6 +7,7 @@ async function mostrarData() {
     let respuesta = await fetch(url)
     let data = await respuesta.json();
 
+    document.createElement("thead");
     console.log(data.abilities);
     //recorro el json con una funcion anonima
     data.abilities.forEach(element => {

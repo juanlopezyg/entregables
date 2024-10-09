@@ -111,6 +111,7 @@ class RegistroAutomotor {
 }
 
 
+
 const registro = new RegistroAutomotor();
 const moto1 = new Moto("ABC123", "C1", 150);
 const camion1 = new Camion("XYZ789", "C2", 2000);
