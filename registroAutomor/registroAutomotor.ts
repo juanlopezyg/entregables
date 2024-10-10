@@ -45,13 +45,6 @@ class RegistroAutomotor {
 // crear instancia del registro
 const registro = new RegistroAutomotor();
 
-// crear vehículos
-const moto = new Moto("ABC123", "C1", 12);
-const auto = new Auto("LMN456", "C3", 20);
-
-// agregar vehículos
-registro.agregarVehiculo(moto);
-registro.agregarVehiculo(auto);
 
 // modificar la moto cambiando la patente y el carnet
 registro.modificarVehiculo("ABC123", { patente: "XYZ999", carnet: "C2" });
@@ -61,3 +54,19 @@ registro.darDeBajaVehiculo("XYZ999");
 
 // mostrar vehículos para verificar los cambios
 console.log(registro.getVehiculos());
+
+//cantidad de puertas del auto
+const auto = new Auto("LMN456", "C3", 20, 4);
+console.log(`El auto tiene ${auto.getPuertas()} puertas.`);
+
+//cantidad de carga del camion
+const camion = new Camion("XYZ123", "C1", 30, 10);
+console.log(`El camión tiene una capacidad de carga de ${camion.getCapacidadCarga()} toneladas.`);
+
+//cilindrada de la motop
+const moto = new Moto("DEF789", "C2", 15, 150);
+console.log(`La cilindrada de la moto es de: ${moto.getMedidaCilindrada()}.`);
+
+// agregar vehículos
+registro.agregarVehiculo(moto);
+registro.agregarVehiculo(auto);
