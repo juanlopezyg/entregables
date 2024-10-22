@@ -8,23 +8,23 @@ export class Arquero extends Personaje{
         this.DañoADistancia = dañoADistancia;
     }
 
-getDañoADistancia():number{
+    public getDañoADistancia():number{
     return this.DañoADistancia;
 }
 
-setDañoADistancia(dañoADistancia:number){
+public setDañoADistancia(dañoADistancia:number){
     this.DañoADistancia
 }
 
-mostrarDetalles(): string {
+public mostrarDetalles(): string {
     return `${this.getNombre()} es un arquero de nivel ${this.getNivel()} con ${this.getExp()} de experiencia y ${this.getDañoADistancia()} de daño a distancia.`;
 }
 
-atacar(): string {
+public atacar(): string {
     return `${this.getNombre()} dispara con su arco!`; 
 }
 
-defender(): string {
+public defender(): string {
     return `${this.getNombre()} se prepara para defenderse!`;
 }
 
