@@ -7,23 +7,23 @@ export class Guerrero extends Personaje {
         super(nombre, exp, nivel);
         this.dañoDeEspada = dañoDeEspada;
     }
-    getDañoDeEspada(): number {
+    public getDañoDeEspada(): number {
         return this.dañoDeEspada;  // Método para obtener el daño de espada
     }
 
-    setDañoDeEspada(dañoDeEspada: number): void {
+    public setDañoDeEspada(dañoDeEspada: number): void {
         this.dañoDeEspada = dañoDeEspada;  // Método para establecer el daño de espada
     }
 
-    mostrarDetalles(): string {
+    public mostrarDetalles(): string {
         return `${this.getNombre()} es un guerrero de nivel ${this.getNivel()} con ${this.getExp()} de experiencia y ${this.getDañoDeEspada()} de daño de espada.`;
     }
 
-    atacar(): string {
+    public atacar(): string {
         return `${this.getNombre()} ataca con su espada!`; 
     }
 
-    defender(): string {
+    public defender(): string {
         return `${this.getNombre()} se prepara para defenderse!`;
 
     }

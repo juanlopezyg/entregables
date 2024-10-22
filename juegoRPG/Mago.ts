@@ -8,23 +8,23 @@ export class Mago extends Personaje {
         this.nivelDeMagia=nivelDeMagia;
     }
 
-    getNivelDeMagia():number{
+    public getNivelDeMagia():number{
        return this.nivelDeMagia;
     }
 
-    setNivelDeMagia(nivelDeMagia:number):void{
+    public setNivelDeMagia(nivelDeMagia:number):void{
         this.nivelDeMagia;
 
     }
-    mostrarDetalles(): string {
+    public mostrarDetalles(): string {
         return `${this.getNombre()} es un mago de nivel ${this.getNivel()} con ${this.getExp()} de experiencia y ${this.nivelDeMagia} de magia.`;
     }
 
-    atacar(): string {
+    public atacar(): string {
         return `${this.getNombre()} lanza un hechizo!`;
     }
 
-    defender(): string {
+    public defender(): string {
         return `${this.getNombre()} conjura un escudo mágico!`;
     }
 

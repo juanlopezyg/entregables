@@ -9,27 +9,27 @@ this.nivel=nivel;
 this.exp=exp;
 }
 
-getNombre():string{
+public getNombre():string{
     return this.nombre
 }
 
-setNombre(nombre:string){
+public setNombre(nombre:string){
     this.nombre;
 }
 
-getNivel(): number {
+public getNivel(): number {
     return this.nivel;  
 }
 
-getExp(): number {
+public getExp(): number {
     return this.exp;  
 }
 
-atacar(): string {
+public atacar(): string {
     return `${this.nombre} ataca`;
 }
 
-defender(): string {
+public defender(): string {
     return `${this.nombre} se defiende`;
 }
 
